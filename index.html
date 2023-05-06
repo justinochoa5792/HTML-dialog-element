@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Dialog Elements</title>
+    <style>
+      dialog::backdrop {
+        background-color: hsl(200, 100%, 50%, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn">Open Modal</button>
+    <!-- The Modal -->
+    <dialog id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+        <form>
+          <input type="text" />
+          <button type="submit">Submit</button>
+          <button type="submit" formmethod="dialog">Cancel</button>
+        </form>
+      </div>
+    </dialog>
+    <script src="./index.js"></script>
+  </body>
+</html>
